@@ -26,6 +26,7 @@ public class CreateAccount extends BaseDriverInitilization {
 	public void createNewFacebookAccount(FacebookLogin _facebookLogin) {
 		loadBaseUrl();		
 		
+		// Pulok will show us demo after completing Create account testcase
 		CreateNewAccountPageObject createAccount=homePageObject.createAccount();	
 		UserLoginHomePage againHomePage=createAccount.createNewAccount(_facebookLogin.getUserLogin());
 		
