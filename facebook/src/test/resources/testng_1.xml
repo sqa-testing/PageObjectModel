@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Facebook-demo-qa-test" parallel="tests"
+	verbose="1">
+	<listeners>
+		<listener
+			class-name="com.coreframework.listeners.MyTestngListener" />
+		<listener
+			class-name="com.coreframework.listeners.ExtentReporterNG" />
+	</listeners>
+	<test name="Test login facebook-qa-test">
+		<!-- <parameter name="browser" value="firefox" /> -->
+		<classes>
+			<class name="com.facebookqa.testcases.LoginTest">
+			</class>
+		</classes>
+	</test>
+	<test name="Test login another fa-online-qa-test">
+		<!-- <parameter name="browser" value="chrome" /> -->
+		<classes>
+			<class name="com.facebookqa.testcases.LoginTest">
+			</class>
+		</classes>
+	</test>
+</suite>
